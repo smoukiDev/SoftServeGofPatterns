@@ -56,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="UML View.cd" />
+    <None Include="UMLClassDiagram.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
