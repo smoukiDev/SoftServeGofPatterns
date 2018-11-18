@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EBBA56D2-A216-45B7-87EA-72456EA9E5D3}</ProjectGuid>
+    <ProjectGuid>{90A8CFCB-3F1A-4869-BFDA-BC01DCAFF8C9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Factory</RootNamespace>
-    <AssemblyName>Factory</AssemblyName>
+    <RootNamespace>FactoryPattern</RootNamespace>
+    <AssemblyName>FactoryPattern</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AudioPlayer.cs" />
+    <Compile Include="DevicesFactory.cs" />
+    <Compile Include="ElectronicDevice.cs" />
+    <Compile Include="Headphones.cs" />
+    <Compile Include="IDeviceFactory.cs" />
+    <Compile Include="MusicDevicesFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Smartphone.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="UML View.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
