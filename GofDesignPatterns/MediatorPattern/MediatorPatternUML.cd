@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="MediatorPattern.Colleague">
+    <Position X="2" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAhAAAAAAAAAAAA=</HashCode>
+      <FileName>Colleague.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediatorPattern.CustomerColleague">
+    <Position X="3.75" Y="4.25" Width="3" />
+    <InheritanceLine Type="MediatorPattern.Colleague" ManuallyRouted="true">
+      <Path>
+        <Point X="3.25" Y="2.44" />
+        <Point X="3.25" Y="2.802" />
+        <Point X="5.25" Y="2.802" />
+        <Point X="5.25" Y="4.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomerColleague.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediatorPattern.DeveloperColleague">
+    <Position X="7.25" Y="4.25" Width="2.75" />
+    <InheritanceLine Type="MediatorPattern.Colleague" ManuallyRouted="true">
+      <Path>
+        <Point X="3.25" Y="2.44" />
+        <Point X="3.25" Y="2.802" />
+        <Point X="8.625" Y="2.802" />
+        <Point X="8.625" Y="4.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>DeveloperCollegue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediatorPattern.ManagerMediator">
+    <Position X="10.5" Y="3.25" Width="3" />
+    <InheritanceLine Type="MediatorPattern.Mediator" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="12.062" Y="1.603" />
+        <Point X="12.062" Y="2.524" />
+        <Point X="12" Y="2.524" />
+        <Point X="12" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAEAAQAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ManagerMediator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediatorPattern.Mediator">
+    <Position X="10.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mediator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediatorPattern.Program">
+    <Position X="6" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediatorPattern.TesterColleague">
+    <Position X="0.5" Y="4.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>TesterColleague.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

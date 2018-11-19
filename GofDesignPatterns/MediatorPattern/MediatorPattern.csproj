@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C1E52BFB-C2E0-4927-827A-DF139E8A75E0}</ProjectGuid>
+    <ProjectGuid>{4F966C9F-A702-4B90-AACF-4E79E8ABBFB2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>InterpreterPattern</RootNamespace>
-    <AssemblyName>InterpreterPattern</AssemblyName>
+    <RootNamespace>MediatorPattern</RootNamespace>
+    <AssemblyName>MediatorPattern</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,17 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Context.cs" />
-    <Compile Include="HundredExpression.cs" />
-    <Compile Include="IExpression.cs" />
+    <Compile Include="Colleague.cs" />
+    <Compile Include="CustomerColleague.cs" />
+    <Compile Include="ManagerMediator.cs" />
+    <Compile Include="Mediator.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="DeveloperCollegue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TensExpression.cs" />
-    <Compile Include="UnitExpression.cs" />
+    <Compile Include="TesterColleague.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="InterpreterPatternUML.cd" />
+    <None Include="MediatorPatternUML.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
