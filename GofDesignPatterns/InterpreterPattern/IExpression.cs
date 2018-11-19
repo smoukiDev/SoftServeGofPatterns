@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterpreterPattern
 {
-    public interface InputExpression
+    public interface IExression
     {
         void Interpret(Context context);
     }

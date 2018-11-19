@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterpreterPattern
 {
-    public class TensExpression : InputExpression
+    public class TensExpression : IExression
     {
         public void Interpret(Context context)
         {

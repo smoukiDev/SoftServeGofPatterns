@@ -17,12 +17,12 @@ namespace InterpreterPattern
             Context context = new Context(userInput);
             if (context.ValidateInput(userInput))
             {
-                List<InputExpression> tree = new List<InputExpression>();
+                List<IExression> tree = new List<IExression>();
                 tree.Add(new HundredExpression());
                 tree.Add(new TensExpression());
                 tree.Add(new UnitExpression());
 
-                foreach (InputExpression item in tree)
+                foreach (IExression item in tree)
                 {
                     item.Interpret(context);
                 }

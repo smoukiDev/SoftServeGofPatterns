@@ -50,15 +50,22 @@ namespace InterpreterPattern
         {
             if(int.TryParse(inputValue, out this.input))
             {
-                if (this.input < 100 || this.input > 999)
+                if (this.input >= 100 || this.input <= 999)
                 {
-                    // TODO: change on exception
+                    isValid = true;
+                    return true;
+                }
+                else
+                {
+                    isValid = false;
                     return false;
                 }
             }
-
-            this.isValid = true;
-            return true;
+            else
+            {
+                isValid = true;
+                return false;
+            }
         }
     }
 }

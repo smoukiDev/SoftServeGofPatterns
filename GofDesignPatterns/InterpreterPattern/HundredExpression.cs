@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterpreterPattern
 {
-    public class HundredExpression : InputExpression
+    public class HundredExpression : IExression
     {
         
         public void Interpret(Context context)
@@ -45,7 +45,7 @@ namespace InterpreterPattern
                         context.Output += "Nine Hundred";
                         break;
                     default:
-                        context.Output += "*";
+                        context.Output += string.Empty;
                         break;
                 }
             }
