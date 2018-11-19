@@ -9,6 +9,6 @@ namespace FacadePattern
     public interface IOrder
     {
         string OrderId { get;}
-        bool SendOrder();
+        bool SendOrder(IPayment payment, IDelivery delivery);
     }
 }

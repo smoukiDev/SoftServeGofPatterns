@@ -13,10 +13,9 @@ namespace FacadePattern
         private IPayment payment;
         private IDelivery delivery;
 
-        public OrderFacade(IShoppingCart<string> cart,
-            IPayment payment, IDelivery delivery)
+        public OrderFacade(IPayment payment, IDelivery delivery)
         {
-            this.cart = cart;
+            this.cart =  new ShoppingCart();
             this.payment = payment;
             this.delivery = delivery;
         }
@@ -34,6 +33,11 @@ namespace FacadePattern
         public string PlaceOrder()
         {
             this.order = new Order();
+            if(this.payment.VerifyPaymentDetails())
+            {
+                this.order.SendOrder(this.payment, this.delivery);
+            }
+            return this.order.OrderId;
         }
     }
 }

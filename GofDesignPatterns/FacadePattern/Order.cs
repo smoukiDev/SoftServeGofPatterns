@@ -15,7 +15,7 @@ namespace FacadePattern
 
         public string OrderId { get; }
 
-        public bool SendOrder()
+        public bool SendOrder(IPayment payment, IDelivery delivery)
         {
             Console.WriteLine("Send order logic");
             return true;

@@ -10,7 +10,17 @@ namespace FacadePattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Guid.NewGuid().ToString());
+            IPayment payment = new Payment(PaymentType.Cash);
+            IDelivery delivery = new Delivery(DeliveryType.PostOffice, "Gagarina street, 31, Dnipro, Ukraine");
+            OrderFacade orderFacade = new OrderFacade(payment, delivery);
+            orderFacade.AddGood("Phone");
+            orderFacade.AddGood("Speakers");
+            orderFacade.RemoveGood("Speakers");
+            orderFacade.AddGood("Headphones");
+            string id = orderFacade.PlaceOrder();
+            Console.WriteLine($"Order №{id} will be delivered by adress");
+            Console.WriteLine($"{delivery.Address} using {delivery.Type} type of delivery.");
+            Console.WriteLine("Order goods:");
             Console.ReadLine();
         }
     }
